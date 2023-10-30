@@ -1,0 +1,59 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ProcessBuilderPow",
+            "request": "launch",
+            "mainClass": "ProcessBuilderPow",
+            "projectName": "psp-2324_3a25bd6d"
+        },
+        {
+            "type": "java",
+            "name": "ProcessBuilderDemo",
+            "request": "launch",
+            "mainClass": "ProcessBuilderDemo",
+            "projectName": "psp-2324_3a25bd6d"
+        },
+        {
+            "type": "java",
+            "name": "Ejecuta",
+            "request": "launch",
+            "mainClass": "Ejecuta",
+            "projectName": "psp-2324_3a25bd6d",
+            "args": [
+                "arg1",
+                "arg2",
+                "arg3"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "HolaMundo",
+            "request": "launch",
+            "mainClass": "HolaMundo",
+            "projectName": "psp-2324_3a25bd6d"
+        },
+        {
+            "type": "java",
+            "name": "HolaMundo3",
+            "request": "launch",
+            "mainClass": "HolaMundo",
+            "projectName": "psp-2324_3a25bd6d",
+            "args": [
+                "arg1",
+                "arg2",
+                "arg3"
+            ]
+        }
+    ]
+}
