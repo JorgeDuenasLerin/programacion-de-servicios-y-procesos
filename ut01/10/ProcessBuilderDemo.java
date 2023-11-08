@@ -12,7 +12,8 @@ class ProcessBuilderDemo {
         commands.add("/home/alumno"); // command in Mac OS*/
         String [] commands = {
             "ls",
-            "-l"
+            "-l",
+            arg[1]
         };
  
         // creating the process
