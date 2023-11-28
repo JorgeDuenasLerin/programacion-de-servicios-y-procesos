@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Principal",
             "request": "launch",
+            "mainClass": "ut02.interrupt.Principal",
+            "projectName": "psp-2324_3a25bd6d"
+        },
+        {
+            "type": "java",
+            "name": "Principal",
+            "request": "launch",
+            "mainClass": "ut02.contador.Principal",
+            "projectName": "psp-2324_3a25bd6d"
+        },
+        {
+            "type": "java",
+            "name": "Principal",
+            "request": "launch",
             "mainClass": "ut02.carrera.Principal",
             "projectName": "psp-2324_3a25bd6d"
         },
