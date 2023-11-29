@@ -4,6 +4,14 @@
 #include <openssl/evp.h>
 #include "magia.c"
 
+/*
+
+Para verificar que funciona:
+
+echo -ne "hola" | md5sum -
+
+*/
+
 int main(int arc, char *argv[]) {
     char *string = argv[1];
 

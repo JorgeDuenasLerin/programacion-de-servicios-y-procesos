@@ -3,6 +3,9 @@
 #include <signal.h>
 #include <unistd.h>
 
+#define RUN_AS_SERVICE 1
+#define SLEEP_TIME 1
+
 void sigint_handler(int signo) {
     printf("Holo!\n");
 }
@@ -25,10 +28,10 @@ int main() {
     printf("Ejecuta este programa y presiona Ctrl + C para generar una señal SIGINT.\n");
 
     // Mantén el programa en ejecución para recibir la señal
-    while (1) {
+    while (RUN_AS_SERVICE) {
         printf(".");
         fflush(stdout);
-        sleep(1);
+        sleep(SLEEP_TIME);
         //raise(2);
         //sigint_handler(2);
     }
