@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ClienteUDP",
+            "request": "launch",
+            "mainClass": "ut03.udp.ClienteUDP",
+            "projectName": "psp-2324_3a25bd6d"
+        },
+        {
+            "type": "java",
             "name": "Principal",
             "request": "launch",
             "mainClass": "ut02.interrupt.Principal",
