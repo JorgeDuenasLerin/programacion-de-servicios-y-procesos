@@ -1,8 +1,10 @@
-# psp-2324
+# programacion-de-servicios-y-procesos
 
-¡Me encanta linux!
+PSP (a.k.a. Podría Ser Peor).
 
-Es más sencillo :)
+Repositorio con ejemplos del módulo
 
+## Changelog
 
-Holaaaaaa
+- Revisado en 2324
+- Usada como base los ejemplos de 2223
