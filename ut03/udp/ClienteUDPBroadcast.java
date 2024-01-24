@@ -7,7 +7,7 @@ import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 
-public class ClienteUDP {
+public class ClienteUDPBroadcast {
 
 	public static void main(String[] args) {
 		try {

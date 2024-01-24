@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MulticastReceive",
+            "request": "launch",
+            "mainClass": "ut03.udp.MulticastReceive",
+            "projectName": "psp-2324_3a25bd6d"
+        },
+        {
+            "type": "java",
+            "name": "MulticastSend",
+            "request": "launch",
+            "mainClass": "ut03.udp.MulticastSend",
+            "projectName": "psp-2324_3a25bd6d"
+        },
+        {
+            "type": "java",
             "name": "ClienteUDP",
             "request": "launch",
             "mainClass": "ut03.udp.ClienteUDP",

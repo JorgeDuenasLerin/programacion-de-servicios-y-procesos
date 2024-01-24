@@ -15,18 +15,22 @@ public class MulticastReceive {
 	public static void main(String[] args) {
 		try {
 
-			Enumeration<NetworkInterface> nets = NetworkInterface.getNetworkInterfaces();
-			for (NetworkInterface netint : Collections.list(nets)) {
-				System.out.println(netint);
+			String iName = "";
+			if(args.length==0){
+				Enumeration<NetworkInterface> nets = NetworkInterface.getNetworkInterfaces();
+				for (NetworkInterface netint : Collections.list(nets)) {
+					System.out.println(netint);
+				}
+				Scanner in = new Scanner(System.in);
+				System.out.println("Especifica el nombre del interfaz");
+				iName = in.nextLine();
+			} else {
+				iName = args[0];
 			}
-			Scanner in = new Scanner(System.in);
-			System.out.println("Especifica el nombre del interfaz");
-			String iName = in.nextLine();
+			
 			NetworkInterface netIf = NetworkInterface.getByName(iName);
 			System.out.println(netIf);
 
-			
-			String msg = "Jorge Hello ";
 			int port = 1234;
 
 			InetAddress mcastaddr = InetAddress.getByName("230.0.0.1");
