@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Scanner;
 
-public class MulticastSend {
+public class MulticastReceive {
 
 	public static void main(String[] args) {
 		try {
@@ -35,10 +35,11 @@ public class MulticastSend {
 
 			s.joinGroup(group, netIf);
 
-			/* Código de envío */
-			byte[] msgBytes = msg.getBytes();
-			DatagramPacket hi = new DatagramPacket(msgBytes, msgBytes.length, group);
-			s.send(hi);
+			/* Código de lectura */
+			byte[] buf = new byte[1000];
+			DatagramPacket recv = new DatagramPacket(buf, buf.length);
+			s.receive(recv);
+			System.out.println(new String(recv.getData(), 0, recv.getLength()));
 
 			// Lo dejo cuando quiera
 			s.leaveGroup(group, netIf);
