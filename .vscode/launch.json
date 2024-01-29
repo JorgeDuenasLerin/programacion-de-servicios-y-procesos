@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Tester",
+            "request": "launch",
+            "mainClass": "miniproyecto.chat.Tester",
+            "projectName": "psp-2324_750f0f03"
+        },
+        {
+            "type": "java",
             "name": "MulticastReceive",
             "request": "launch",
             "mainClass": "ut03.udp.MulticastReceive",
