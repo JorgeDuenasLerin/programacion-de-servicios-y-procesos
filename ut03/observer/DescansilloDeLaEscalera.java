@@ -9,8 +9,12 @@ class DescansilloDeLaEscalera {
     public interface MarujaMarujo {
         void update(String event);
     }
-  
-    private final List<MarujaMarujo> observers = new ArrayList<>();
+
+    private List<MarujaMarujo> observers;
+	
+	public DescansilloDeLaEscalera(){
+		observers = new ArrayList<>();
+	}	
   
     private void notifyObservers(String event) {
     	

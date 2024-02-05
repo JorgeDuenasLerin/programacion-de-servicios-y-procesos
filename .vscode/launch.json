@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ClienteManda",
+            "request": "launch",
+            "mainClass": "ut03.tcp.ClienteManda",
+            "projectName": "psp-2324_750f0f03"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "ut03.tcp.Server",
+            "projectName": "psp-2324_750f0f03"
+        },
+        {
+            "type": "java",
             "name": "Tester",
             "request": "launch",
             "mainClass": "miniproyecto.chat.Tester",
