@@ -1,4 +1,4 @@
-package ut03comunicaciones.tcp;
+package ut03.tcp;
 
 import java.io.DataOutputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package ut03comunicaciones.tcp;
+package ut03.tcp;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -18,18 +18,18 @@ public class Server {
 				Socket socket = server.accept();
 				
 				DataInputStream in = new DataInputStream ( socket.getInputStream());
-				DataOutputStream out = new DataOutputStream(socket.getOutputStream());
-				
+				//DataOutputStream out = new DataOutputStream(socket.getOutputStream());
+				/* 
 				String s = in.readLine();
 				for (int x = 0; x < 32000; x++) {
 					for (int i = 0; i < 1000; i++) {
 						out.writeUTF(x + s.toUpperCase());
 					}
-				}
-				
+				}*/
+				System.out.print("He recibido: " + in.readLine());
 				
 				in.close();
-				out.close();
+				//out.close();
 				socket.close();
 			}
 		} catch (IOException e) {
