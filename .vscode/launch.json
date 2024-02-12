@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ServidorHTTP",
+            "request": "launch",
+            "mainClass": "ut04.ServidorHTTP",
+            "projectName": "psp-2324_3a25bd6d"
+        },
+        {
+            "type": "java",
             "name": "MulticastReceive",
             "request": "launch",
             "mainClass": "ut03.udp.MulticastReceive",
